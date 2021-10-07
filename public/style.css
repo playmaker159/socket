@@ -1,70 +1,88 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("anime-background.jpg");
 }
 
-.chat__section{
-    width: 800px;
-    max-width: 90%;
+.chat__section {
+  width: 800px;
+  max-width: 90%;
 }
 
-.brand{
-    padding: 20px;
-    display: flex;
-    align-items: center;
+.brand {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.315);
+  border-radius: 10px;
+  backdrop-filter: blur (10px);
 }
-.brand h1{
-    text-transform: uppercase;
-    font-size: 20px;
-    margin-left: 10px;
+.brand h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-left: 10px;
+  /* font-size: 72px; */
+  font-family: "Pacifico", cursive;
+  background: -webkit-linear-gradient(rgb(239, 23, 247), rgb(231, 2, 174));
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
 }
-.message__area{
-    height: 500px;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
-    padding-top: 40px;
+.message__area {
+  height: 500px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding-top: 40px;
 }
-textarea{
-    width: 100%;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    padding: 20px;
+textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.315);
 }
-.message{
-    padding: 20px;
-    border-radius: 4px;
-    margin-bottom: 40px;
-    max-width: 300px;
-    position: relative;
+.message {
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  max-width: 300px;
+  position: relative;
+  word-wrap: anywhere;
+  line-height: 25px;
 }
-.incoming{
-    background-color: black;
-    color: #efefef;
+
+.incoming {
+  background-color: #c200d4e1;
+  color: black;
 }
-.outgoing{
-    background-color: #efefef;
-    margin-left: auto;
-    color: black;
+.outgoing {
+  background-color: #95cfcfe1;
+  margin-left: auto;
+  color: black;
 }
-.message h4{
-    position: absolute;
-    top: -20px;
-    left: 0;
-    color: #333;
-    font-size: 14px;
+.message h4 {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  /* color: #333; */
+  font-size: 15px;
+  color: #fff;
 }
-img{
-    height: 50px;
+img {
+  height: 50px;
 }
